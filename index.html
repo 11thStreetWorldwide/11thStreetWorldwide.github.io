@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+      integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/navbar.css" />
+    <link rel="stylesheet" href="css/slideshow.css" />
+    <title>11th Street Worldwide</title>
+  </head>
+  <body>
+    <div id="root">
+      <div id="landing">
+        <nav class="navbar">
+          <span class="navbar-toggle" id="js-navbar-toggle"> <i class="fas fa-bars"></i> </span>
+          <a href="#"><img src="images/11thStreetLogoTransparent.png" class="nav-logo"/></a>
+          <ul class="main-nav" id="js-menu">
+            <li><a href="#" class="nav-links">Music</a></li>
+            <li><a href="#" class="nav-links">Videography</a></li>
+            <li><a href="#" class="nav-links">Photography</a></li>
+            <li><a href="pages/lineup.html" class="nav-links">Lineup</a></li>
+            <li><a href="#" class="nav-links">Contact</a></li>
+          </ul>
+        </nav>
+        <div id="about-us">
+          <h1 id="title">11th Street Worldwide</h1>
+          <img src="images/11thStreetLogoTransparent.png" id="landing-logo" />
+          <p id="about">
+            <strong>The Creator’s Collective.</strong><br />
+            Creative Agency devoted to inspire the masses to not think, just do.
+          </p>
+          <a id="view-work-btn" href="#work" onclick="playMusic()">View Our Work</a>
+        </div>
+      </div>
+      <div id="work">
+        <!-- Slideshow container -->
+        <div class="slideshow-container">
+          <!-- Full-width images with number and caption text -->
+          <div class="mySlides fade">
+            <audio id="musicSlide" autoplay loop><source src="images/musicSlideAudio.mp4" /></audio>
+            <img src="images/musicSlide.jpg" style="width:100%" />
+            <div class="text"><a id="music-caption" href="#">View Music</a></div>
+          </div>
+
+          <div class="mySlides fade">
+            <video id="videoSlide" type="video/mp4" width="100%" playsinline autoplay loop>
+              <source src="images/videoSlide.mp4" />
+            </video>
+            <div class="text"><a id="video-caption" href="#">View Videos</a></div>
+          </div>
+
+          <div class="mySlides fade">
+            <video id="photoSlide" type="video/mp4" width="100%" autoplay loop>
+              <source src="images/photoSlide.mp4" />
+            </video>
+            <div class="text"><a id="photo-caption" href="#">View Photos</a></div>
+          </div>
+
+          <!-- Next and previous buttons -->
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br />
+
+        <!-- The dots/circles -->
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+      </div>
+      <div id="contact">
+        <h1>Contact</h1>
+        <p>Email: <strong>example@gmail.com</strong></p>
+        <p>Instagram: <strong>11thstreetworldwide</strong></p>
+        <p>Twitter: <strong>11thstworldwide</strong></p>
+      </div>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/scroll.js"></script>
+    <script src="js/navbar.js"></script>
+    <script src="js/slideshow.js"></script>
+  </body>
+</html>

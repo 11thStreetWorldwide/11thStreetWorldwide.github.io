@@ -1,0 +1,52 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #7ebfe7;
+}
+#root {
+  background-color: white;
+  max-width: 900px;
+  margin: auto;
+  box-shadow: 30px 0px 40px rgba(0, 0, 0, 0.4), -30px 0px 40px rgba(0, 0, 0, 0.4);
+}
+.member-page-intro {
+  text-align: center;
+  background-image: url('../images/MemberThumbnails/memberpages/RyanKane/RyanKaneMain.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 94vh;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+.member-page-intro h1 {
+  font-size: 4rem;
+  margin-top: 50px;
+}
+
+.member-title {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  margin-top: 250px;
+}
+
+.view-work-btn {
+  font-size: 1.5rem;
+  display: inline-block;
+  border: 1px black solid;
+  border-radius: 50px;
+  background: white;
+  text-decoration: none;
+  color: #000000;
+  padding: 4px 8px;
+  transition: background 400ms ease;
+  margin-bottom: 50px;
+}
+.view-work-btn:hover {
+  background: #778899;
+}

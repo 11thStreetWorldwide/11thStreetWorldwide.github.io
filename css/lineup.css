@@ -1,0 +1,103 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #7ebfe7;
+}
+#root {
+  background-color: white;
+  max-width: 900px;
+  margin: 0px auto;
+  box-shadow: 30px 0px 40px rgba(0, 0, 0, 0.4), -30px 0px 40px rgba(0, 0, 0, 0.4);
+}
+#landing {
+  height: 100vh;
+}
+#lineup-intro {
+  color: white;
+  height: 94vh;
+  background: url('../images/lineupintro.jpg');
+  background-repeat: no-repeat;
+  background-position: -325px;
+  background-size: cover;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+#lineup-intro h1 {
+  margin: 32px;
+  font-size: 3rem;
+}
+#lineup-intro p {
+  margin-top: 200px;
+  margin-bottom: 200px;
+  margin-left: 32px;
+  margin-right: 32px;
+  font-size: 2rem;
+}
+#view-lineup-btn {
+  font-size: 1.5rem;
+  display: inline-block;
+  border: 1px black solid;
+  border-radius: 50px;
+  text-decoration: none;
+  color: #000000;
+  margin: auto;
+  background-color: white;
+  padding: 4px 8px;
+  transition: background 400ms ease;
+}
+#view-lineup-btn:hover {
+  background: #778899;
+}
+.member-container {
+  margin: 64px;
+  text-align: center;
+}
+.member-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.member-info img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 1px solid black;
+}
+.member-info h3 {
+  font-size: 2rem;
+  margin: 0px 8px;
+}
+.member-info h4 {
+  color: gray;
+  font-size: 0.9rem;
+}
+.thumb {
+  padding: 8px;
+}
+.view-page-btn {
+  font-size: 1.5rem;
+  display: inline-block;
+  border: 1px black solid;
+  border-radius: 50px;
+  text-decoration: none;
+  color: #000000;
+  margin-top: 12px;
+  padding: 4px 8px;
+  flex-grow: 1;
+  transition: background 400ms ease;
+}
+.view-page-btn:hover {
+  background: #778899;
+}
+
+#contact {
+  padding: 50px;
+  text-align: center;
+}
+#contact h1 {
+  margin-bottom: 20px;
+}

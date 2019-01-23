@@ -1,4 +1,4 @@
 # 11th Street Website
 
 Website created for 11 Street Worldwide, a collective of creators. <br>
-Live version of the site can be found at
+The website is not live at the moment, but will be soon.

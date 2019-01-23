@@ -12,7 +12,7 @@ body {
 }
 .member-page-intro {
   text-align: center;
-  background-image: url('../images/MemberThumbnails/memberpages/RyanKane/RyanKaneMain.jpg');
+  background-image: url('../../assets/images/MemberThumbnails/memberpages/RyanKane/RyanKaneMain.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;

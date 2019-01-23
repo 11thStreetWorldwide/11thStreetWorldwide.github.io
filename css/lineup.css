@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css?family=Cabin|Roboto+Condensed');
+/* font-family: 'Roboto Condensed', sans-serif;
+font-family: 'Cabin', sans-serif;*/
 html,
 body {
   margin: 0;
@@ -16,26 +19,30 @@ body {
 #lineup-intro {
   color: white;
   height: 94vh;
-  background: url('../images/lineupintro.jpg');
+  background: url('../assets/images/lineupintro.jpg');
   background-repeat: no-repeat;
   background-position: -325px;
   background-size: cover;
   text-align: center;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   flex-direction: column;
 }
 #lineup-intro h1 {
   margin: 32px;
-  font-size: 3rem;
+  font-size: 2rem;
+  font-family: 'Roboto Condensed', sans-serif;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 #lineup-intro p {
   margin-top: 200px;
   margin-bottom: 200px;
   margin-left: 32px;
   margin-right: 32px;
-  font-size: 2rem;
+  font-size: 1.5rem;
+  font-family: 'Cabin', sans-serif;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 #view-lineup-btn {
   font-size: 1.5rem;
@@ -48,13 +55,27 @@ body {
   background-color: white;
   padding: 4px 8px;
   transition: background 400ms ease;
+  font-family: 'Cabin', sans-serif;
 }
 #view-lineup-btn:hover {
   background: #778899;
 }
+#lineup {
+  margin-top: 32px;
+  padding-top: 32px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 1fr);
+}
 .member-container {
-  margin: 64px;
+  border: 1px solid black;
+  margin: 32px 10%;
+  padding: 16px;
   text-align: center;
+  transition: background 400ms ease;
+  box-shadow: 30px 0px 40px rgba(0, 0, 0, 0.3), -30px 0px 40px rgba(0, 0, 0, 0.3);
+}
+.member-container:hover {
+  background: #778899;
 }
 .member-info {
   display: flex;
@@ -70,34 +91,36 @@ body {
 .member-info h3 {
   font-size: 2rem;
   margin: 0px 8px;
+  font-family: 'Roboto Condensed', sans-serif;
 }
 .member-info h4 {
-  color: gray;
   font-size: 0.9rem;
+  font-family: 'Cabin', sans-serif;
 }
 .thumb {
   padding: 8px;
 }
-.view-page-btn {
-  font-size: 1.5rem;
-  display: inline-block;
-  border: 1px black solid;
-  border-radius: 50px;
+.member-link {
   text-decoration: none;
-  color: #000000;
-  margin-top: 12px;
-  padding: 4px 8px;
-  flex-grow: 1;
-  transition: background 400ms ease;
+  color: black;
 }
-.view-page-btn:hover {
-  background: #778899;
-}
-
 #contact {
   padding: 50px;
   text-align: center;
+  font-family: 'Roboto Condensed', sans-serif;
 }
 #contact h1 {
   margin-bottom: 20px;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+@media (min-width: 700px) {
+  .member-container {
+    margin: 32px 20%;
+  }
+  #lineup-intro h1 {
+    font-size: 3rem;
+  }
+  #lineup-intro p {
+    font-size: 2rem;
+  }
 }

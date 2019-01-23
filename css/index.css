@@ -26,8 +26,9 @@ body {
 }
 #about-us h1 {
   color: #000000;
-  font-size: 3rem;
+  font-size: 2rem;
   flex-grow: 1;
+  font-family: 'Roboto Condensed', sans-serif;
 }
 #landing-logo {
   flex-grow: 1;
@@ -36,7 +37,8 @@ body {
 #about-us p {
   color: #000000;
   flex-grow: 1;
-  font-size: 2rem;
+  font-size: 1.5rem;
+  font-family: 'Cabin', sans-serif;
 }
 #view-work-btn {
   font-size: 1.5rem;
@@ -45,45 +47,32 @@ body {
   border-radius: 50px;
   text-decoration: none;
   color: #000000;
-  margin-top: 100px;
   padding: 4px 8px;
+  margin-top: 50px;
   flex-grow: 1;
   transition: background 400ms ease;
+  font-family: 'Cabin', sans-serif;
 }
 #view-work-btn:hover {
   background: #778899;
 }
-#work {
-}
 #contact {
   padding: 50px;
   text-align: center;
+  font-family: 'Roboto Condensed', sans-serif;
 }
 #contact h1 {
   margin-bottom: 20px;
+  font-family: 'Roboto Condensed', sans-serif;
 }
 @media (max-height: 800px) {
   #landing-logo {
     width: 300px;
   }
-  #about-us p {
-    font-size: 1rem;
-  }
-}
-@media (max-width: 600px) {
-  #about-us h1 {
-    font-size: 2rem;
-  }
 }
 @media (min-width: 799px) {
-  #about-us h1 {
-    font-size: 2rem;
-    margin-bottom: 50px;
-  }
-  #about-us p {
-    margin-top: 50px;
-  }
-  #view-work-btn {
-    margin-top: 150px;
+  #work {
+    margin-top: 20px;
+    padding-top: 20px;
   }
 }

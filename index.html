@@ -20,18 +20,18 @@
       <div id="landing">
         <nav class="navbar">
           <span class="navbar-toggle" id="js-navbar-toggle"> <i class="fas fa-bars"></i> </span>
-          <a href="#"><img src="images/11thStreetLogoTransparent.png" class="nav-logo"/></a>
+          <a href="#"><img src="assets/images/11thStreetLogoTransparent.png" class="nav-logo"/></a>
           <ul class="main-nav" id="js-menu">
-            <li><a href="#" class="nav-links">Music</a></li>
-            <li><a href="#" class="nav-links">Videography</a></li>
-            <li><a href="#" class="nav-links">Photography</a></li>
+            <li><a href="pages/music.html" class="nav-links">Music</a></li>
+            <li><a href="pages/videography.html" class="nav-links">Videography</a></li>
+            <li><a href="pages/skateclub.html" class="nav-links">Skate Club</a></li>
             <li><a href="pages/lineup.html" class="nav-links">Lineup</a></li>
-            <li><a href="#" class="nav-links">Contact</a></li>
+            <li><a href="pages/contact.html" class="nav-links">Contact</a></li>
           </ul>
         </nav>
         <div id="about-us">
           <h1 id="title">11th Street Worldwide</h1>
-          <img src="images/11thStreetLogoTransparent.png" id="landing-logo" />
+          <img src="assets/images/11thStreetLogoTransparent.png" id="landing-logo" />
           <p id="about">
             <strong>The Creator’s Collective.</strong><br />
             Creative Agency devoted to inspire the masses to not think, just do.
@@ -44,23 +44,29 @@
         <div class="slideshow-container">
           <!-- Full-width images with number and caption text -->
           <div class="mySlides fade">
-            <audio id="musicSlide" autoplay loop><source src="images/musicSlideAudio.mp4" /></audio>
-            <img src="images/musicSlide.jpg" style="width:100%" />
-            <div class="text"><a id="music-caption" href="#">View Music</a></div>
+            <audio id="musicSlide" autoplay loop>
+              <source src="assets/images/musicSlideAudio.mp4" />
+            </audio>
+            <img src="assets/images/musicSlide.jpg" style="width:100%" />
+            <div class="text"><a id="music-caption" href="pages/music.html">View Music</a></div>
           </div>
 
           <div class="mySlides fade">
             <video id="videoSlide" type="video/mp4" width="100%" playsinline autoplay loop>
-              <source src="images/videoSlide.mp4" />
+              <source src="assets/images/videoSlide.mp4" />
             </video>
-            <div class="text"><a id="video-caption" href="#">View Videos</a></div>
+            <div class="text">
+              <a id="video-caption" href="pages/videography.html">View Videos</a>
+            </div>
           </div>
 
           <div class="mySlides fade">
-            <video id="photoSlide" type="video/mp4" width="100%" autoplay loop>
-              <source src="images/photoSlide.mp4" />
+            <video id="photoSlide" type="video/mp4" width="100%" playsinline autoplay muted loop>
+              <source src="assets/images/photoSlide.mp4" />
             </video>
-            <div class="text"><a id="photo-caption" href="#">View Photos</a></div>
+            <div class="text">
+              <a id="skateclub-caption" href="pages/skateclub.html">View Skate Club</a>
+            </div>
           </div>
 
           <!-- Next and previous buttons -->
@@ -76,12 +82,12 @@
           <span class="dot" onclick="currentSlide(3)"></span>
         </div>
       </div>
-      <div id="contact">
+      <footer id="contact">
         <h1>Contact</h1>
         <p>Email: <strong>example@gmail.com</strong></p>
-        <p>Instagram: <strong>11thstreetworldwide</strong></p>
-        <p>Twitter: <strong>11thstworldwide</strong></p>
-      </div>
+        <p>Instagram: <strong>@11thstreetworldwide</strong></p>
+        <p>Twitter: <strong>@11thstworldwide</strong></p>
+      </footer>
     </div>
 
     <script

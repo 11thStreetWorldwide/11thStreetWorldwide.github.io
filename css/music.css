@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css?family=Cabin|Roboto+Condensed');
+/* font-family: 'Roboto Condensed', sans-serif;
+font-family: 'Cabin', sans-serif;*/
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #7ebfe7;
+}
+#root {
+  background-color: white;
+  max-width: 900px;
+  margin: auto;
+  box-shadow: 30px 0px 40px rgba(0, 0, 0, 0.4), -30px 0px 40px rgba(0, 0, 0, 0.4);
+}
+#new-releases {
+  text-align: center;
+}
+#new-releases h1 {
+  font-family: 'Roboto Condensed', sans-serif;
+}
+.release {
+}
+#contact {
+  padding: 50px;
+  text-align: center;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+#contact h1 {
+  margin-bottom: 20px;
+  font-family: 'Roboto Condensed', sans-serif;
+}

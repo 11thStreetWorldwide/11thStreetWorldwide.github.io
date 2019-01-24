@@ -48,6 +48,8 @@ body {
   padding: 32px;
 }
 #contact {
+  margin-top: 100px;
+  background-color: #778899;
   padding: 50px;
   text-align: center;
   font-family: 'Roboto Condensed', sans-serif;

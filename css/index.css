@@ -57,6 +57,8 @@ body {
   background: #778899;
 }
 #contact {
+  margin-top: 100px;
+  background-color: #778899;
   padding: 50px;
   text-align: center;
   font-family: 'Roboto Condensed', sans-serif;

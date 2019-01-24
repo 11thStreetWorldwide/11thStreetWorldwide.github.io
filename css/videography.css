@@ -20,7 +20,15 @@ h1 {
 #videos {
   text-align: center;
 }
+#video-one {
+  opacity: 1;
+}
+#video-two {
+  opacity: 1;
+}
 .video {
+  opacity: 0;
+  border: 1px solid black;
   margin: 64px 10%;
   box-shadow: 30px 0px 40px rgba(0, 0, 0, 0.3), -30px 0px 40px rgba(0, 0, 0, 0.3);
 }

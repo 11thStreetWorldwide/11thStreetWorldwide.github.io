@@ -20,7 +20,12 @@ body {
   font-family: 'Roboto Condensed', sans-serif;
   font-size: 3rem;
 }
+#release-one {
+  opacity: 1;
+}
 .release {
+  opacity: 0;
+  border: 1px solid black;
   margin: 64px 10%;
   box-shadow: 30px 0px 40px rgba(0, 0, 0, 0.3), -30px 0px 40px rgba(0, 0, 0, 0.3);
 }

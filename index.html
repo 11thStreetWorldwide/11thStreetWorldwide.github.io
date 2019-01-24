@@ -24,7 +24,6 @@
           <ul class="main-nav" id="js-menu">
             <li><a href="pages/music.html" class="nav-links">Music</a></li>
             <li><a href="pages/videography.html" class="nav-links">Videography</a></li>
-            <li><a href="pages/skateclub.html" class="nav-links">Skate Club</a></li>
             <li><a href="pages/lineup.html" class="nav-links">Lineup</a></li>
             <li><a href="pages/contact.html" class="nav-links">Contact</a></li>
           </ul>
@@ -52,20 +51,19 @@
           </div>
 
           <div class="mySlides fade">
-            <video id="videoSlide" type="video/mp4" width="100%" playsinline autoplay loop>
+            <video
+              id="videoSlide"
+              type="video/mp4"
+              width="100%"
+              height="50%"
+              playsinline
+              autoplay
+              loop
+            >
               <source src="assets/videos/videoSlide.mp4" />
             </video>
             <div class="text">
               <a id="video-caption" href="pages/videography.html">View Videos</a>
-            </div>
-          </div>
-
-          <div class="mySlides fade">
-            <video id="photoSlide" type="video/mp4" width="100%" playsinline autoplay muted loop>
-              <source src="assets/videos/photoSlide.mp4" />
-            </video>
-            <div class="text">
-              <a id="skateclub-caption" href="pages/skateclub.html">View Skate Club</a>
             </div>
           </div>
 
@@ -79,7 +77,6 @@
         <div style="text-align:center">
           <span class="dot" onclick="currentSlide(1)"></span>
           <span class="dot" onclick="currentSlide(2)"></span>
-          <span class="dot" onclick="currentSlide(3)"></span>
         </div>
       </div>
       <footer id="contact">

@@ -56,6 +56,9 @@ body {
 #view-work-btn:hover {
   background: #778899;
 }
+#work {
+  margin-top: 100px;
+}
 #contact {
   margin-top: 100px;
   background-color: #778899;

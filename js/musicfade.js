@@ -9,12 +9,12 @@ $(document).ready(() => {
   $(window).scroll(() => {
     /* Check the location of each desired element */
     $('.release').each(function(i) {
-      let bottomOfObject = $(this).position().top + $(this).outerHeight();
+      let topOfObject = $(this).position().top;
       let bottomOfWindow = $(window).scrollTop() + $(window).height();
 
-      /* If the object is completely visible in the window, fade it it */
-      if (bottomOfWindow > bottomOfObject) {
-        $(this).animate({ opacity: '1' }, 1000);
+      /* If the object is visible in window */
+      if (bottomOfWindow > topOfObject) {
+        $(this).animate({ opacity: '1' }, 1500);
       }
     });
   });

@@ -1,6 +1,7 @@
 let counter = 0;
 $('#navbar-toggle').click(() => {
   if (counter % 2 === 0) {
+    $('.main-nav').css({ 'z-index': 100 });
     $('#navbar').css({ background: '#000000' });
     $('span').css({ background: 'white' });
     $('.main-nav').css({ 'background-image': '#000000' });
@@ -8,6 +9,7 @@ $('#navbar-toggle').click(() => {
     $('.main-nav').css({ opacity: 1 });
     counter++;
   } else {
+    $('.main-nav').css({ 'z-index': -1 });
     $('#navbar').css({ background: 'white' });
     $('span').css({ background: '#000000' });
     $('.main-nav').css({ background: '#000000' });

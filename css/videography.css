@@ -8,9 +8,11 @@ body {
   background-color: #7ebfe7;
 }
 #root {
+  position: relative;
+  z-index: 1;
   background-color: white;
   max-width: 900px;
-  margin: 0px auto;
+  margin: auto;
   box-shadow: 30px 0px 40px rgba(0, 0, 0, 0.4), -30px 0px 40px rgba(0, 0, 0, 0.4);
 }
 h1 {
@@ -47,6 +49,7 @@ h1 {
   width: 100%;
   padding-bottom: 56.25%;
   height: 0;
+  margin-bottom: 32px;
 }
 .iframe-container iframe {
   position: absolute;
@@ -66,4 +69,15 @@ h1 {
 #contact h1 {
   margin-bottom: 20px;
   font-family: 'Roboto Condensed', sans-serif;
+}
+@media (max-width: 500px) {
+  .video h2 {
+    font-size: 1.5rem;
+  }
+  .video h3 {
+    font-size: 1rem;
+  }
+  .video {
+    margin: 64px 5%;
+  }
 }

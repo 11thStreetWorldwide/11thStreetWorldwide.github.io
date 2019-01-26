@@ -8,9 +8,11 @@ body {
   background-color: #7ebfe7;
 }
 #root {
+  position: relative;
+  z-index: 1;
   background-color: white;
   max-width: 900px;
-  margin: 0px auto;
+  margin: auto;
   box-shadow: 30px 0px 40px rgba(0, 0, 0, 0.4), -30px 0px 40px rgba(0, 0, 0, 0.4);
 }
 #landing {
@@ -84,25 +86,30 @@ body {
 .member-container:hover {
   background: #778899;
 }
-.member-info {
-  display: flex;
-  justify-content: center;
+.col {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
   align-items: center;
+  justify-content: center;
 }
-.member-info img {
+.member-photo img {
   width: 100px;
   height: 100px;
   border-radius: 50%;
   border: 1px solid black;
 }
+.mem-info {
+  background: red;
+}
 .member-info h3 {
   font-size: 2rem;
-  margin: 0px 8px;
-  font-family: 'Roboto Condensed', sans-serif;
 }
 .member-info h4 {
-  font-size: 0.9rem;
-  font-family: 'Cabin', sans-serif;
+  font-size: 1.25rem;
+}
+
+.extra-padding {
+  margin-right: 32px;
 }
 .thumb {
   padding: 8px;
@@ -133,3 +140,22 @@ body {
     font-size: 2rem;
   }
 }
+@media (max-width: 500px) {
+  .member-container {
+    margin: 32px 5%;
+    padding: 16px 0;
+  }
+  .member-info img {
+    width: 100px;
+    height: 100px;
+  }
+  .member-info h3 {
+    font-size: 1.5rem;
+    margin: 0;
+  }
+  .member-info h4 {
+    font-size: 1rem;
+  }
+}
+
+/*Grid attempt*/

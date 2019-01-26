@@ -17,16 +17,26 @@
   <body>
     <div id="root">
       <div id="landing">
-        <nav class="navbar">
-          <span class="navbar-toggle" id="js-navbar-toggle"> <i class="fas fa-bars"></i> </span>
-          <a href="../index.html"
-            ><img src="../assets/images/11thStreetLogoTransparent.png" class="nav-logo"
-          /></a>
+        <nav id="navbar">
+          <!--<span class="navbar-toggle" id="js-navbar-toggle"> <i class="fas fa-bars"></i> </span>-->
+          <a href="/"><img src="../assets/images/11thStreetLogoTransparent.png" id="nav-logo"/></a>
+          <div id="toggle-container">
+            <label for="nav-check">
+              <div id="navbar-toggle">
+                <div id="hamburger"><span></span> <span></span> <span></span></div>
+                <div id="cross"><span></span> <span></span></div>
+              </div>
+            </label>
+          </div>
           <ul class="main-nav" id="js-menu">
-            <li><a href="music.html" class="nav-links">Music</a></li>
-            <li><a href="videography.html" class="nav-links">Videography</a></li>
-            <li><a href="lineup.html" class="nav-links">Lineup</a></li>
-            <li><a href="contact.html" class="nav-links">Contact</a></li>
+            <li><a href="music.html" id="music-link" class="nav-links hidden">Music</a></li>
+            <li>
+              <a href="videography.html" id="videography-link" class="nav-links hidden"
+                >Videography</a
+              >
+            </li>
+            <li><a href="lineup.html" id="lineup-link" class="nav-links hidden">Lineup</a></li>
+            <li><a href="contact.html" id="contact-link" class="nav-links hidden">Contact</a></li>
           </ul>
         </nav>
         <div id="lineup-intro">
@@ -38,12 +48,14 @@
       <div id="lineup">
         <!--Miles Franklyn-->
         <a class="member-link" href="memberpages/MilesFranklyn.html">
-          <div id="member-one" class="member-container">
-            <div class="member-info">
-              <div><img src="../assets/images/MemberThumbnails/MilesFranklyn.jpg" /></div>
-              <div>
+          <div class="member-container">
+            <div class="col">
+              <div class="member-photo">
+                <img src="../assets/images/MemberThumbnails/MilesFranklyn.jpg" />
+              </div>
+              <div class="member-info">
                 <h3>Miles Franklyn</h3>
-                <h4>Co-CEO/Videographer/Editor/Designer</h4>
+                <h4>Co-CEO/Videographer<br />Editor/Designer</h4>
               </div>
             </div>
             <div class="member-links">
@@ -56,12 +68,6 @@
                 ><img
                   class="twitter-thumb thumb"
                   src="../assets/images/MemberThumbnails/SocialLinks/Twitter.png"
-              /></a>
-              <a
-                href="https://open.spotify.com/user/frenchmiles?si=HV0fIT_hR-C3RMEI9TGARA"
-                target="_blank"
-                id="member-two"
-                ><img class="thumb" src="./Spotify.png"
               /></a>
               <a href="https://soundcloud.com/user-119613479" target="_blank"
                 ><img
@@ -77,12 +83,14 @@
 
         <!--Alec Aquino-->
         <a class="member-link" href="memberpages/MilesFranklyn.html">
-          <div id="member-two" class="member-container">
-            <div class="member-info">
-              <div><img src="../assets/images/MemberThumbnails/AlecAquino.jpg" /></div>
-              <div>
+          <div class="member-container">
+            <div class="col">
+              <div class="member-photo">
+                <img src="../assets/images/MemberThumbnails/AlecAquino.jpg" />
+              </div>
+              <div class="member-info">
                 <h3>Alec Aquino</h3>
-                <h4>Co-CEO/Photographer/Editor/Designer</h4>
+                <h4>Co-CEO/Photographer<br />Editor/Designer</h4>
               </div>
             </div>
             <div class="member-links">
@@ -102,10 +110,12 @@
 
         <!--YAHYA-->
         <a class="member-link" href="memberpages/MilesFranklyn.html">
-          <div id="member-three" class="member-container">
-            <div class="member-info">
-              <div><img src="../assets/images/MemberThumbnails/YAHYA.jpg" /></div>
-              <div>
+          <div class="member-container">
+            <div class="col">
+              <div class="member-photo">
+                <img src="../assets/images/MemberThumbnails/YAHYA.jpg" />
+              </div>
+              <div class="member-info">
                 <h3>YAHYA</h3>
                 <h4>Rapper</h4>
               </div>
@@ -132,10 +142,12 @@
 
         <!--Ty.-->
         <a class="member-link" href="memberpages/MilesFranklyn.html">
-          <div id="member-four" class="member-container">
-            <div class="member-info">
-              <div><img src="../assets/images/MemberThumbnails/TaiHaul.jpg" /></div>
-              <div>
+          <div class="member-container">
+            <div class="col">
+              <div class="member-photo">
+                <img src="../assets/images/MemberThumbnails/TaiHaul.jpg" />
+              </div>
+              <div class="member-info">
                 <h3>Ty.</h3>
                 <h4>Rapper</h4>
               </div>
@@ -163,9 +175,11 @@
         <!--Shades DeSimone-->
         <a class="member-link" href="memberpages/MilesFranklyn.html">
           <div class="member-container">
-            <div class="member-info">
-              <div><img src="../assets/images/MemberThumbnails/ShadesDeSimone.jpg" /></div>
-              <div>
+            <div class="col">
+              <div class="member-photo">
+                <img src="../assets/images/MemberThumbnails/ShadesDeSimone.jpg" />
+              </div>
+              <div class="member-info">
                 <h3>Shades DeSimone</h3>
                 <h4>11th Street Radio Curator</h4>
               </div>
@@ -186,11 +200,13 @@
         </a>
 
         <!--James Rudman-->
-        <a class="member-link" href="memberpages/JamesRudman.html">
+        <a class="member-link" href="memberpages/MilesFranklyn.html">
           <div class="member-container">
-            <div class="member-info">
-              <div><img src="../assets/images/MemberThumbnails/JamesRudman.jpg" /></div>
-              <div>
+            <div class="col">
+              <div class="member-photo">
+                <img src="../assets/images/MemberThumbnails/JamesRudman.jpg" />
+              </div>
+              <div class="member-info">
                 <h3>James Rudman</h3>
                 <h4>Videographer/Photographer</h4>
               </div>
@@ -214,13 +230,15 @@
         </a>
 
         <!--Ryan Kane-->
-        <a class="member-link" href="memberpages/RyanKane.html">
+        <a class="member-link" href="memberpages/MilesFranklyn.html">
           <div class="member-container">
-            <div class="member-info">
-              <div><img src="../assets/images/MemberThumbnails/RyanKane.jpg" /></div>
-              <div>
+            <div class="col">
+              <div class="member-photo">
+                <img src="../assets/images/MemberThumbnails/RyanKane.jpg" />
+              </div>
+              <div class="member-info">
                 <h3>Ryan Kane</h3>
-                <h4>&nbsp Videographer/Website Developer</h4>
+                <h4>Videographer/Website Developer</h4>
               </div>
             </div>
             <div class="member-links">
@@ -250,13 +268,15 @@
         </a>
 
         <!--TySnapz-->
-        <a class="member-link" href="memberpages/JamesRudman.html">
+        <a class="member-link" href="memberpages/MilesFranklyn.html">
           <div class="member-container">
-            <div class="member-info">
-              <div><img src="../assets/images/MemberThumbnails/TySnapz.jpg" /></div>
-              <div>
+            <div class="col">
+              <div class="member-photo">
+                <img src="../assets/images/MemberThumbnails/TySnapz.jpg" />
+              </div>
+              <div class="member-info">
                 <h3>TySnapz</h3>
-                <h4>Videographer/Director/Editor/Photographer</h4>
+                <h4>Videographer/Director<br />Editor/Photographer</h4>
               </div>
             </div>
             <div class="member-links">
@@ -273,11 +293,13 @@
         </a>
 
         <!--Ethan Carlson-->
-        <a class="member-link" href="memberpages/EthanCarlson.html">
+        <a class="member-link" href="memberpages/MilesFranklyn.html">
           <div class="member-container">
-            <div class="member-info">
-              <div><img src="../assets/images/MemberThumbnails/EthanCarlson.jpg" /></div>
-              <div>
+            <div class="col">
+              <div class="member-photo">
+                <img src="../assets/images/MemberThumbnails/EthanCarlson.jpg" />
+              </div>
+              <div class="member-info">
                 <h3>Ethan Carlson</h3>
                 <h4>11th Street Radio Curator</h4>
               </div>
@@ -303,11 +325,13 @@
         </a>
 
         <!--Evan E.-->
-        <a class="member-link" href="memberpages/EthanCarlson.html">
+        <a class="member-link" href="memberpages/MilesFranklyn.html">
           <div class="member-container">
-            <div class="member-info">
-              <div><img src="../assets/images/MemberThumbnails/EthanCarlson.jpg" /></div>
-              <div>
+            <div class="col">
+              <div class="member-photo">
+                <img src="../assets/images/MemberThumbnails/EthanCarlson.jpg" />
+              </div>
+              <div class="member-info">
                 <h3>Evan E.</h3>
                 <h4>Rapper/11th Street Skate Club</h4>
               </div>
@@ -328,11 +352,13 @@
         </a>
 
         <!--Miles Chapman-->
-        <a class="member-link" href="memberpages/EthanCarlson.html">
+        <a class="member-link" href="memberpages/MilesFranklyn.html">
           <div class="member-container">
-            <div class="member-info">
-              <div><img src="../assets/images/MemberThumbnails/EthanCarlson.jpg" /></div>
-              <div>
+            <div class="col">
+              <div class="member-photo">
+                <img src="../assets/images/MemberThumbnails/EthanCarlson.jpg" />
+              </div>
+              <div class="member-info">
                 <h3>Miles Chapman</h3>
                 <h4>11th Street Skate Club</h4>
               </div>

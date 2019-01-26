@@ -11,15 +11,23 @@ font-family: 'Cabin', sans-serif;*/
 body {
   font-family: 'Roboto Condensed', sans-serif;
 }
-
-.navbar {
+.main-nav {
+  height: 100vh;
+  list-style: none;
+  position: absolute;
+  z-index: 100;
+  /* background-color: black; */
+  width: 100%;
+  opacity: 0;
+  box-shadow: 30px 0px 40px rgba(0, 0, 0, 0.4), -30px 0px 40px rgba(0, 0, 0, 0.4);
+}
+#navbar {
   font-size: 18px;
   padding-bottom: 10px;
 }
-
-.main-nav {
-  list-style-type: none;
+.hidden {
   display: none;
+  visibility: hidden;
 }
 
 .nav-links,
@@ -31,63 +39,173 @@ body {
 .main-nav li {
   text-align: center;
   margin: 15px auto;
+  color: white;
 }
-
-.nav-logo {
+.main-nav a {
+  color: white;
+}
+#nav-logo {
   display: inline-block;
   width: 60px;
   font-size: 22px;
   margin-top: 10px;
   margin-left: 20px;
 }
-
-.navbar-toggle {
-  position: absolute;
-  top: 25px;
-  right: 20px;
-  cursor: pointer;
-  color: #000000;
-  font-size: 24px;
-}
-
-.active {
-  display: block;
-}
-
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 767px) {
   .navbar {
-    display: flex;
-    justify-content: space-between;
     padding-bottom: 0;
-    height: 70px;
-    align-items: center;
   }
-
-  .main-nav {
-    display: flex;
-    margin-right: 30px;
-    flex-direction: row;
-    justify-content: flex-end;
-  }
-
   .main-nav li {
-    margin: 0;
+    font-size: 1.5rem;
+    margin: 15% 0;
   }
-
+  .main-nav a {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (min-width: 768px) {
   .nav-links {
+    margin: 0;
     margin-left: 40px;
   }
-
-  .nav-logo {
+  .main-nav li {
+    font-size: 3rem;
+    margin: 15% 0;
+  }
+  .main-nav a {
+    font-size: 3rem;
+  }
+  #nav-logo {
     margin-top: 0;
   }
-
-  .navbar-toggle {
-    display: none;
-  }
-
   .nav-logo:hover,
   .nav-links:hover {
     color: #778899;
   }
+}
+/*Drawer*/
+
+/* BURGER */
+/**
+   Coded by /u/j0be in scss.
+   See scss source here -> https://codepen.io/j0be/pen/MKRVyN
+*/
+
+* {
+  transition: 0.25s ease-in-out;
+  box-sizing: border-box;
+}
+span {
+  display: block;
+  background: #000000;
+  border-radius: 2px;
+}
+#toggle-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 16px;
+}
+#navbar-toggle {
+  width: 40px;
+  height: 40px;
+  margin: 0 auto;
+  position: relative;
+  position: relative;
+  cursor: pointer;
+  border-radius: 5px;
+}
+#navbar-toggle:hover {
+  /* background: blue; */
+}
+#navbar-toggle #hamburger {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 1000;
+}
+#navbar-toggle #hamburger span {
+  width: 30px;
+  height: 4px;
+  margin: 8px 0;
+}
+#navbar-toggle #hamburger span:nth-child(1) {
+  transition-delay: 0.5s;
+}
+#navbar-toggle #hamburger span:nth-child(2) {
+  transition-delay: 0.625s;
+}
+#navbar-toggle #hamburger span:nth-child(3) {
+  transition-delay: 0.75s;
+}
+#navbar-toggle #cross {
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  height: 100%;
+  width: 100%;
+  transform: rotate(45deg);
+  z-index: 1000;
+}
+#navbar-toggle #cross span:nth-child(1) {
+  height: 0%;
+  width: 4px;
+  position: absolute;
+  top: 25%;
+  left: 24px;
+  transition-delay: 0s;
+}
+#navbar-toggle #cross span:nth-child(2) {
+  width: 0%;
+  height: 4px;
+  position: absolute;
+  left: 25%;
+  top: 24px;
+  transition-delay: 0.25s;
+}
+#navbar-toggle.open #hamburger span {
+  width: 0%;
+}
+#navbar-toggle.open #hamburger span:nth-child(1) {
+  transition-delay: 0s;
+}
+#navbar-toggle.open #hamburger span:nth-child(2) {
+  transition-delay: 0.125s;
+}
+#navbar-toggle.open #hamburger span:nth-child(3) {
+  transition-delay: 0.25s;
+}
+#navbar-toggle.open #cross span:nth-child(1) {
+  height: 80%;
+  transition-delay: 0.625s;
+}
+#navbar-toggle.open #cross span:nth-child(2) {
+  width: 80%;
+  transition-delay: 0.375s;
+}
+
+/* Nav underline animation */
+/* Side Drawer Underline Animation */
+.nav-links,
+.nav-links:visited {
+  text-decoration: none;
+  position: relative;
+  color: white;
+}
+.nav-links:after,
+.nav-links:visited:after {
+  content: '';
+  height: 3px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  background: white;
+  transition: 0.2s;
+}
+.nav-links:hover:after,
+.nav-links:visited:hover:after {
+  width: 100%;
 }

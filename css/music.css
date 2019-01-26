@@ -8,6 +8,8 @@ body {
   background-color: #7ebfe7;
 }
 #root {
+  position: relative;
+  z-index: 1;
   background-color: white;
   max-width: 900px;
   margin: auto;
@@ -47,6 +49,7 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  margin-bottom: 32px;
 }
 .cover-container img {
   width: 100%;
@@ -67,5 +70,11 @@ body {
   .release {
     margin-left: 20%;
     margin-right: 20%;
+  }
+}
+@media (max-width: 500px) {
+  .release {
+    margin-left: 5%;
+    margin-right: 5%;
   }
 }

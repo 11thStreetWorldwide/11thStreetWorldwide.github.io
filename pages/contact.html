@@ -16,16 +16,26 @@
   </head>
   <body>
     <div id="root">
-      <nav class="navbar">
-        <span class="navbar-toggle" id="js-navbar-toggle"> <i class="fas fa-bars"></i> </span>
-        <a href="../index.html"
-          ><img src="../assets/images/11thStreetLogoTransparent.png" class="nav-logo"
-        /></a>
+      <nav id="navbar">
+        <!--<span class="navbar-toggle" id="js-navbar-toggle"> <i class="fas fa-bars"></i> </span>-->
+        <a href="/"><img src="../assets/images/11thStreetLogoTransparent.png" id="nav-logo"/></a>
+        <div id="toggle-container">
+          <label for="nav-check">
+            <div id="navbar-toggle">
+              <div id="hamburger"><span></span> <span></span> <span></span></div>
+              <div id="cross"><span></span> <span></span></div>
+            </div>
+          </label>
+        </div>
         <ul class="main-nav" id="js-menu">
-          <li><a href="music.html" class="nav-links">Music</a></li>
-          <li><a href="videography.html" class="nav-links">Videography</a></li>
-          <li><a href="lineup.html" class="nav-links">Lineup</a></li>
-          <li><a href="contact.html" class="nav-links">Contact</a></li>
+          <li><a href="music.html" id="music-link" class="nav-links hidden">Music</a></li>
+          <li>
+            <a href="videography.html" id="videography-link" class="nav-links hidden"
+              >Videography</a
+            >
+          </li>
+          <li><a href="lineup.html" id="lineup-link" class="nav-links hidden">Lineup</a></li>
+          <li><a href="contact.html" id="contact-link" class="nav-links hidden">Contact</a></li>
         </ul>
       </nav>
       <h1>Contact</h1>

@@ -14,7 +14,7 @@ $(document).ready(() => {
 
       /* If the object is visible in window */
       if (bottomOfWindow > topOfObject) {
-        $(this).animate({ opacity: '1' }, 1500);
+        $(this).animate({ opacity: '1' }, 1000);
       }
     });
   });

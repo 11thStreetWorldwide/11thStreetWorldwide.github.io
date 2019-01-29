@@ -44,6 +44,20 @@ h1 {
   font-size: 1.25rem;
   font-family: 'Cabin', sans-serif;
 }
+.video a {
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: black;
+  display: inline-block;
+  border: 1px solid black;
+  border-radius: 50px;
+  padding: 2px 4px;
+  margin: 16px;
+  transition: background 500 ease;
+}
+.video a:hover {
+  background: #778899;
+}
 .iframe-container {
   position: relative;
   width: 100%;
@@ -59,12 +73,21 @@ h1 {
   height: 100%;
   padding: 16px;
 }
+.iframe-container video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 16px;
+}
 #contact {
   margin-top: 100px;
-  background-color: #778899;
+  background-color: #000000;
   padding: 50px;
   text-align: center;
   font-family: 'Roboto Condensed', sans-serif;
+  color: white;
 }
 #contact h1 {
   margin-bottom: 20px;

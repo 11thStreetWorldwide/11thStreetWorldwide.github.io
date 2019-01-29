@@ -59,7 +59,7 @@ body {
     margin: 15% 0;
   }
   .main-nav a {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
 }
 @media screen and (min-width: 768px) {
@@ -72,7 +72,7 @@ body {
     margin: 15% 0;
   }
   .main-nav a {
-    font-size: 3rem;
+    font-size: 4rem;
   }
   #nav-logo {
     margin-top: 0;

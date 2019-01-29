@@ -63,10 +63,11 @@ body {
 }
 #contact {
   margin-top: 100px;
-  background-color: #778899;
+  background-color: #000000;
   padding: 50px;
   text-align: center;
   font-family: 'Roboto Condensed', sans-serif;
+  color: white;
 }
 #contact h1 {
   margin-bottom: 20px;

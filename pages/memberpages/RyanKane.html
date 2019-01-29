@@ -17,19 +17,32 @@
   <body>
     <div id="root">
       <div id="landing">
-        <nav class="navbar">
-          <span class="navbar-toggle" id="js-navbar-toggle"> <i class="fas fa-bars"></i> </span>
-          <a href="../../index.html"
-            ><img src="../../assets/images/11thStreetLogoTransparent.png" class="nav-logo"
-          /></a>
-          <ul class="main-nav" id="js-menu">
-            <li><a href="../music.html" class="nav-links">Music</a></li>
-            <li><a href="../videography.html" class="nav-links">Videography</a></li>
-            <li><a href="../skateclub.html" class="nav-links">Skate Club</a></li>
-            <li><a href="../lineup.html" class="nav-links">Lineup</a></li>
-            <li><a href="../contact.html" class="nav-links">Contact</a></li>
-          </ul>
-        </nav>
+          <nav id="navbar">
+              <!--<span class="navbar-toggle" id="js-navbar-toggle"> <i class="fas fa-bars"></i> </span>-->
+              <a href="../../index.html"
+                ><img src="../../assets/images/11thStreetLogoTransparent.png" id="nav-logo"
+              /></a>
+              <div id="toggle-container">
+                <label for="nav-check">
+                  <div id="navbar-toggle">
+                    <div id="hamburger"><span></span> <span></span> <span></span></div>
+                    <div id="cross"><span></span> <span></span></div>
+                  </div>
+                </label>
+              </div>
+              <ul class="main-nav" id="js-menu">
+                <li><a href="pages/music.html" id="music-link" class="nav-links hidden">Music</a></li>
+                <li>
+                  <a href="pages/videography.html" id="videography-link" class="nav-links hidden"
+                    >Videography</a
+                  >
+                </li>
+                <li>
+                  <a href="pages/lineup.html" id="lineup-link" class="nav-links hidden">Lineup</a>
+                </li>
+              </ul>
+            </nav>
+            <div id="cover"></div>
         <div id="memberpage-intro">
             <h1>Ryan Kane</h1>
             <div>
@@ -48,6 +61,6 @@
       integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
       crossorigin="anonymous"
     ></script>
-    <script src="../../js/navbar.js"></script>
+    <script src="../../js/membernavbar.js"></script>
   </body>
 </html>

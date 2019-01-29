@@ -11,6 +11,7 @@ $(document).ready(() => {
     $('.release').each(function(i) {
       let topOfObject = $(this).position().top;
       let bottomOfWindow = $(window).scrollTop() + $(window).height();
+      let topOfWindow = $(window).scrollTop();
 
       /* If the object is visible in window */
       if (bottomOfWindow > topOfObject) {

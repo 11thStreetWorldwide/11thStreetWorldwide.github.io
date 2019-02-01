@@ -70,6 +70,29 @@ $('#videography-link').on({
     $('#navbar').css({ background: '#000000', 'background-image': '#000000', height: 'auto' });
   }
 });
+$('#skateclub-link').on({
+  mouseenter: () => {
+    $('#navbar').css({
+      'background-image': 'url(../assets/images/IMG_2777.JPG)',
+      'background-repeat': 'no-repeat',
+      'background-position': 'center',
+      'background-size': 'cover',
+      height: '100vh'
+    });
+    $('.main-nav').css({
+      'background-image': 'none',
+      background: 'none'
+    });
+  },
+  mouseleave: () => {
+    $('.main-nav').css({
+      'background-image': '#000000',
+      background: '#000000'
+    });
+    $('.nav-links').css({ color: 'white' });
+    $('#navbar').css({ background: '#000000', 'background-image': '#000000', height: 'auto' });
+  }
+});
 $('#lineup-link').on({
   mouseenter: () => {
     $('#navbar').css({

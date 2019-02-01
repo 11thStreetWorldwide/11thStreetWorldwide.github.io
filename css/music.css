@@ -56,9 +56,9 @@ body {
   padding: 32px;
 }
 #contact {
-  margin-top: 100px;
+  margin-top: 32px;
+  padding: 16px 0;
   background-color: #000000;
-  padding: 50px;
   text-align: center;
   font-family: 'Roboto Condensed', sans-serif;
   color: white;

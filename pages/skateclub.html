@@ -15,7 +15,7 @@
     <title>11th Street Worldwide</title>
   </head>
   <body>
-    <div id="root">
+    <main id="root">
       <nav id="navbar">
         <!--<span class="navbar-toggle" id="js-navbar-toggle"> <i class="fas fa-bars"></i> </span>-->
         <a href="/"><img src="../assets/images/11thStreetLogoTransparent.png" id="nav-logo"/></a>
@@ -34,16 +34,47 @@
               >Videography</a
             >
           </li>
+          <li>
+            <a href="skateclub.html" id="skateclub-link" class="nav-links hidden">Skate Club</a>
+          </li>
           <li><a href="lineup.html" id="lineup-link" class="nav-links hidden">Lineup</a></li>
-          <li><a href="contact.html" id="contact-link" class="nav-links hidden">Contact</a></li>
         </ul>
       </nav>
       <div id="cover"></div>
-      <h1>Skate Club</h1>
+      <main>
+        <h1>Skate Club</h1>
+        <h2>Miles Chapman and Evan E.</h2>
+        <div id="videos">
+          <div class="video">
+            <div class="iframe-container">
+              <iframe 
+                width="560" 
+                height="315" 
+                src="https://www.youtube.com/embed/8AHSwc4Ksn0?autoplay=1&controls=0&loop=1" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen 
+                autoplay>
+              </iframe>
+            </div>
+          </div>
+          <div class="video">
+            <div class="iframe-container">
+              <iframe 
+                width="560" 
+                height="315" 
+                src="https://www.youtube.com/embed/cQPGyCvOo-I?controls=0&loop=1" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+              </iframe>
+            </div>
+          </div>
+        </div>  
+      </main>
 
       <footer id="contact">
         <h1>Contact</h1>
-        <p>Email: <strong>example@gmail.com</strong></p>
         <p>Instagram: <strong> @11thstreetworldwide</strong></p>
         <p>Twitter: <strong> @11thstworldwide</strong></p>
       </footer>

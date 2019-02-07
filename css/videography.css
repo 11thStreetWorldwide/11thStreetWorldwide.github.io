@@ -43,6 +43,7 @@ h1 {
 .video h3 {
   font-size: 1.25rem;
   font-family: 'Cabin', sans-serif;
+  padding-bottom: 16px;
 }
 .video a {
   font-size: 1.5rem;
@@ -52,7 +53,7 @@ h1 {
   border: 1px solid black;
   border-radius: 50px;
   padding: 2px 4px;
-  margin: 16px;
+  margin: 32px;
   transition: background 500 ease;
 }
 .video a:hover {
@@ -71,7 +72,7 @@ h1 {
   left: 0;
   width: 100%;
   height: 100%;
-  padding: 16px;
+  padding: 0 16px;
 }
 #contact {
   margin-top: 32px;
